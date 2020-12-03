@@ -1,15 +1,17 @@
 const express = require('express');
-const helmet = require('helmet');
-const cors = require('cors');
 
-const domainsRouter = require('');
+const bodyParser = require('body-parser');
 
-const server = express();
+const app = express();
 
-server.use(helmet());
-server.use(express.jsoon());
-server.use(cors());
+//Load up node's built in file system helper library to serve our JSON file
+const fs = require('fs');
 
-server.use('/api/domains', domainsRouter);
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-module.exports = server;
+const routes = require('./domains/domains-router.js')(app, fs);
+
+const server = app.listen(3001, () => {
+  console.log('listening on port %s...', server.address().port);
+});

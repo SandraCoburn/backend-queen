@@ -1,16 +1,9 @@
-const express = require('express');
-const Domains = require('./domain-model.js');
-
-const router = express.Router();
-
-router.get('/', (req, res) => {
-  Domains.find()
-    .then((domains) => {
-      res.json(domains);
-    })
-    .catch((err) => {
-      res.status(500).json({ message: 'Failed to get domains' });
-    });
-});
+const visitsRouter = require('./visits');
+const router = (app, fs) => {
+  app.get('./', (req, res) => {
+    res.send('Welcome to the development api-server');
+  });
+  visitsRouter(app, fs);
+};
 
 module.exports = router;
