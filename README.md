@@ -21,6 +21,6 @@ Database: sqlite3
 - run: <strong>npm install</strong> to download all dependencies
 - run: <strong>npm start</strong> to start nodemon server in local dev environment
 
-### Postman was used to test the endpoints
+### Postman was used to test the endpoints and to create documentation
 
 [Postman](https://www.postman.com/) is a collaboration platform for API development.
