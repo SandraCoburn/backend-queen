@@ -29,8 +29,8 @@ const visitRoutes = (app, fs) => {
     try {
       //Pull date out of URL parameter
       const { date } = req.params;
-
-      if (!date) {
+      // Date should be input as yyyy-mm-dd
+      if (date) {
         throw Error('404');
       } else {
         const options = {
@@ -52,7 +52,7 @@ const visitRoutes = (app, fs) => {
       if (err.toString() === 'Error: 404') {
         return res
           .status(400)
-          .json({ message: 'No data with that date was found.' });
+          .json({ message: 'You need to input a valid date' });
       } else {
         return res.status(500).json({
           message: 'Something is wrong with the server. Try again later.',

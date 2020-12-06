@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon"
+    "server": "nodemon",
+    "start": "node index.js",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,13 @@
   },
   "homepage": "https://github.com/SandraCoburn/backend-queen#readme",
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "clearMocks": true
   },
   "dependencies": {
     "body-parser": "^1.19.0",
