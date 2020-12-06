@@ -9,6 +9,7 @@ Language: JavaScript
 Framework: ExpressJS
 Runtime Environment: NodeJS
 Database: sqlite3
+Testing Libraries: Jest and supertest
 ```
 
 - Provide average site visits for a given date
@@ -19,7 +20,8 @@ Database: sqlite3
 
 - Fork this repo or clone it in your machine
 - run: <strong>npm install</strong> to download all dependencies
-- run: <strong>npm start</strong> to start nodemon server in local dev environment
+- run: <strong>npm start</strong> to start nodemon server in local dev environment(localhost:4000)
+- run: <strong>npm test</strong> to start testing server
 
 ### Postman was used to test the endpoints and to create documentation
 
