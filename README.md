@@ -1,4 +1,4 @@
-# Backend Implementation
+# Backend Implementation - Queen Take home project
 
 [API Endpoints Documentation](https://documenter.getpostman.com/view/10351835/TVmP9Gky)
 
