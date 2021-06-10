@@ -1,6 +1,7 @@
 # Backend Implementation - Queen Take home project
 
-[API Endpoints Documentation](https://documenter.getpostman.com/view/10351835/TVmP9Gky)
+- [API Endpoints Documentation](https://documenter.getpostman.com/view/10351835/TVmP9Gky)
+- [Backend Implementation Plan](https://docs.google.com/document/d/18Sv09YLIOD5fT9Vn5hqTarD1A-VZClrpcJEgX4bKZWw/edit?usp=sharing)
 
 #### API
 
